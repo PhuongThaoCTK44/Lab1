@@ -1,0 +1,347 @@
+{
+  "version": 3,
+  "targets": {
+    ".NETFramework,Version=v6.0": {
+      "Microsoft.EntityFrameworkCore/7.0.3": {
+        "type": "package"
+      },
+      "Microsoft.EntityFrameworkCore.SqlServer/7.0.3": {
+        "type": "package"
+      },
+      "Microsoft.EntityFrameworkCore.Tools/7.0.3": {
+        "type": "package"
+      },
+      "System.Linq.Dynamic.Core/1.2.25": {
+        "type": "package",
+        "compile": {
+          "lib/net46/System.Linq.Dynamic.Core.dll": {}
+        },
+        "runtime": {
+          "lib/net46/System.Linq.Dynamic.Core.dll": {}
+        }
+      },
+      "TatBlog.Core/1.0.0": {
+        "type": "project",
+        "framework": ".NETFramework,Version=v6.0"
+      },
+      "TatBlog.Data/1.0.0": {
+        "type": "project",
+        "framework": ".NETFramework,Version=v6.0",
+        "dependencies": {
+          "Microsoft.EntityFrameworkCore": "7.0.3",
+          "Microsoft.EntityFrameworkCore.SqlServer": "7.0.3",
+          "TatBlog.Core": "1.0.0"
+        }
+      },
+      "TatBlog.Services/1.0.0": {
+        "type": "project",
+        "framework": ".NETFramework,Version=v6.0",
+        "dependencies": {
+          "System.Linq.Dynamic.Core": "1.2.25",
+          "TatBlog.Core": "1.0.0",
+          "TatBlog.Data": "1.0.0"
+        }
+      }
+    },
+    ".NETFramework,Version=v6.0/win7-x86": {
+      "Microsoft.EntityFrameworkCore/7.0.3": {
+        "type": "package"
+      },
+      "Microsoft.EntityFrameworkCore.SqlServer/7.0.3": {
+        "type": "package"
+      },
+      "Microsoft.EntityFrameworkCore.Tools/7.0.3": {
+        "type": "package"
+      },
+      "System.Linq.Dynamic.Core/1.2.25": {
+        "type": "package",
+        "compile": {
+          "lib/net46/System.Linq.Dynamic.Core.dll": {}
+        },
+        "runtime": {
+          "lib/net46/System.Linq.Dynamic.Core.dll": {}
+        }
+      },
+      "TatBlog.Core/1.0.0": {
+        "type": "project",
+        "framework": ".NETFramework,Version=v6.0"
+      },
+      "TatBlog.Data/1.0.0": {
+        "type": "project",
+        "framework": ".NETFramework,Version=v6.0",
+        "dependencies": {
+          "Microsoft.EntityFrameworkCore": "7.0.3",
+          "Microsoft.EntityFrameworkCore.SqlServer": "7.0.3",
+          "TatBlog.Core": "1.0.0"
+        }
+      },
+      "TatBlog.Services/1.0.0": {
+        "type": "project",
+        "framework": ".NETFramework,Version=v6.0",
+        "dependencies": {
+          "System.Linq.Dynamic.Core": "1.2.25",
+          "TatBlog.Core": "1.0.0",
+          "TatBlog.Data": "1.0.0"
+        }
+      }
+    }
+  },
+  "libraries": {
+    "Microsoft.EntityFrameworkCore/7.0.3": {
+      "sha512": "6XUI2YGoaLMoP9KGaqWmmd4B2n5bpQbXrVRpH20Et3YjQ0Rn3Ia6HM/ANcSq9rBfjfUySgo9SwUZgQ4m4PF3LQ==",
+      "type": "package",
+      "path": "microsoft.entityframeworkcore/7.0.3",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "Icon.png",
+        "buildTransitive/net6.0/Microsoft.EntityFrameworkCore.props",
+        "lib/net6.0/Microsoft.EntityFrameworkCore.dll",
+        "lib/net6.0/Microsoft.EntityFrameworkCore.xml",
+        "microsoft.entityframeworkcore.7.0.3.nupkg.sha512",
+        "microsoft.entityframeworkcore.nuspec"
+      ]
+    },
+    "Microsoft.EntityFrameworkCore.SqlServer/7.0.3": {
+      "sha512": "WXd8Mg12+LrfuVOfz0YUYsiaIKI0fLTdhN/WdQGxzGM3l86GLdpACUb30Y7oUpMG4YNegerEd0AVLlMpfwOjug==",
+      "type": "package",
+      "path": "microsoft.entityframeworkcore.sqlserver/7.0.3",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "Icon.png",
+        "lib/net6.0/Microsoft.EntityFrameworkCore.SqlServer.dll",
+        "lib/net6.0/Microsoft.EntityFrameworkCore.SqlServer.xml",
+        "microsoft.entityframeworkcore.sqlserver.7.0.3.nupkg.sha512",
+        "microsoft.entityframeworkcore.sqlserver.nuspec"
+      ]
+    },
+    "Microsoft.EntityFrameworkCore.Tools/7.0.3": {
+      "sha512": "yHFlYPZS3Jx7JMCQnGKfJzv95rJWVcmcUn/OW5cbCyWgQk81JJpTZ9Q6kkvwquYjFRfvYHBGuXNIYhAJokOBTQ==",
+      "type": "package",
+      "path": "microsoft.entityframeworkcore.tools/7.0.3",
+      "hasTools": true,
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "Icon.png",
+        "lib/net6.0/_._",
+        "microsoft.entityframeworkcore.tools.7.0.3.nupkg.sha512",
+        "microsoft.entityframeworkcore.tools.nuspec",
+        "tools/EntityFrameworkCore.PS2.psd1",
+        "tools/EntityFrameworkCore.PS2.psm1",
+        "tools/EntityFrameworkCore.psd1",
+        "tools/EntityFrameworkCore.psm1",
+        "tools/about_EntityFrameworkCore.help.txt",
+        "tools/init.ps1",
+        "tools/net461/any/ef.exe",
+        "tools/net461/win-arm64/ef.exe",
+        "tools/net461/win-x86/ef.exe",
+        "tools/netcoreapp2.0/any/ef.dll",
+        "tools/netcoreapp2.0/any/ef.runtimeconfig.json"
+      ]
+    },
+    "System.Linq.Dynamic.Core/1.2.25": {
+      "sha512": "qpkqDHLNxGR1qBNrdnnPfJFfsKSWy3nUELC/BWxP8vwSaf8vVwecZzXOV4B52yOGit94g0pLWJEe30a4L1tE7g==",
+      "type": "package",
+      "path": "system.linq.dynamic.core/1.2.25",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "lib/net35/System.Linq.Dynamic.Core.dll",
+        "lib/net35/System.Linq.Dynamic.Core.pdb",
+        "lib/net35/System.Linq.Dynamic.Core.xml",
+        "lib/net40/System.Linq.Dynamic.Core.dll",
+        "lib/net40/System.Linq.Dynamic.Core.pdb",
+        "lib/net40/System.Linq.Dynamic.Core.xml",
+        "lib/net45/System.Linq.Dynamic.Core.dll",
+        "lib/net45/System.Linq.Dynamic.Core.pdb",
+        "lib/net45/System.Linq.Dynamic.Core.xml",
+        "lib/net452/System.Linq.Dynamic.Core.dll",
+        "lib/net452/System.Linq.Dynamic.Core.pdb",
+        "lib/net452/System.Linq.Dynamic.Core.xml",
+        "lib/net46/System.Linq.Dynamic.Core.dll",
+        "lib/net46/System.Linq.Dynamic.Core.pdb",
+        "lib/net46/System.Linq.Dynamic.Core.xml",
+        "lib/net5.0/System.Linq.Dynamic.Core.dll",
+        "lib/net5.0/System.Linq.Dynamic.Core.pdb",
+        "lib/net5.0/System.Linq.Dynamic.Core.xml",
+        "lib/net6.0/System.Linq.Dynamic.Core.dll",
+        "lib/net6.0/System.Linq.Dynamic.Core.pdb",
+        "lib/net6.0/System.Linq.Dynamic.Core.xml",
+        "lib/net7.0/System.Linq.Dynamic.Core.dll",
+        "lib/net7.0/System.Linq.Dynamic.Core.pdb",
+        "lib/net7.0/System.Linq.Dynamic.Core.xml",
+        "lib/netcoreapp2.1/System.Linq.Dynamic.Core.dll",
+        "lib/netcoreapp2.1/System.Linq.Dynamic.Core.pdb",
+        "lib/netcoreapp2.1/System.Linq.Dynamic.Core.xml",
+        "lib/netcoreapp3.1/System.Linq.Dynamic.Core.dll",
+        "lib/netcoreapp3.1/System.Linq.Dynamic.Core.pdb",
+        "lib/netcoreapp3.1/System.Linq.Dynamic.Core.xml",
+        "lib/netstandard1.3/System.Linq.Dynamic.Core.dll",
+        "lib/netstandard1.3/System.Linq.Dynamic.Core.pdb",
+        "lib/netstandard1.3/System.Linq.Dynamic.Core.xml",
+        "lib/netstandard2.0/System.Linq.Dynamic.Core.dll",
+        "lib/netstandard2.0/System.Linq.Dynamic.Core.pdb",
+        "lib/netstandard2.0/System.Linq.Dynamic.Core.xml",
+        "lib/netstandard2.1/System.Linq.Dynamic.Core.dll",
+        "lib/netstandard2.1/System.Linq.Dynamic.Core.pdb",
+        "lib/netstandard2.1/System.Linq.Dynamic.Core.xml",
+        "lib/uap10.0.10240/System.Linq.Dynamic.Core.dll",
+        "lib/uap10.0.10240/System.Linq.Dynamic.Core.pdb",
+        "lib/uap10.0.10240/System.Linq.Dynamic.Core.pri",
+        "lib/uap10.0.10240/System.Linq.Dynamic.Core.xml",
+        "logo.png",
+        "system.linq.dynamic.core.1.2.25.nupkg.sha512",
+        "system.linq.dynamic.core.nuspec"
+      ]
+    },
+    "TatBlog.Core/1.0.0": {
+      "type": "project",
+      "path": "../TatBlog.Core/TatBlog.Core.csproj",
+      "msbuildProject": "../TatBlog.Core/TatBlog.Core.csproj"
+    },
+    "TatBlog.Data/1.0.0": {
+      "type": "project",
+      "path": "../TatBlog.Data/TatBlog.Data.csproj",
+      "msbuildProject": "../TatBlog.Data/TatBlog.Data.csproj"
+    },
+    "TatBlog.Services/1.0.0": {
+      "type": "project",
+      "path": "../TatBlog.Services/TatBlog.Services.csproj",
+      "msbuildProject": "../TatBlog.Services/TatBlog.Services.csproj"
+    }
+  },
+  "projectFileDependencyGroups": {
+    ".NETFramework,Version=v6.0": [
+      "Microsoft.EntityFrameworkCore.Tools >= 7.0.3",
+      "TatBlog.Core >= 1.0.0",
+      "TatBlog.Data >= 1.0.0",
+      "TatBlog.Services >= 1.0.0"
+    ]
+  },
+  "packageFolders": {
+    "C:\\Users\\CICT\\.nuget\\packages\\": {},
+    "C:\\Microsoft\\Xamarin\\NuGet\\": {}
+  },
+  "project": {
+    "version": "1.0.0",
+    "restore": {
+      "projectUniqueName": "C:\\Users\\CICT\\Downloads\\Lab_1\\src\\Lab1\\TipsAndTricks\\TatBlog.WinApp\\TatBlog.WinApp.csproj",
+      "projectName": "TatBlog.WinApp",
+      "projectPath": "C:\\Users\\CICT\\Downloads\\Lab_1\\src\\Lab1\\TipsAndTricks\\TatBlog.WinApp\\TatBlog.WinApp.csproj",
+      "packagesPath": "C:\\Users\\CICT\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\CICT\\Downloads\\Lab_1\\src\\Lab1\\TipsAndTricks\\TatBlog.WinApp\\obj\\",
+      "projectStyle": "PackageReference",
+      "fallbackFolders": [
+        "C:\\Microsoft\\Xamarin\\NuGet\\"
+      ],
+      "configFilePaths": [
+        "C:\\Users\\CICT\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
+      ],
+      "originalTargetFrameworks": [
+        "net6.0"
+      ],
+      "sources": {
+        "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+        "https://api.nuget.org/v3/index.json": {}
+      },
+      "frameworks": {
+        "net60": {
+          "projectReferences": {
+            "C:\\Users\\CICT\\Downloads\\Lab_1\\src\\Lab1\\TipsAndTricks\\TatBlog.Core\\TatBlog.Core.csproj": {
+              "projectPath": "C:\\Users\\CICT\\Downloads\\Lab_1\\src\\Lab1\\TipsAndTricks\\TatBlog.Core\\TatBlog.Core.csproj"
+            },
+            "C:\\Users\\CICT\\Downloads\\Lab_1\\src\\Lab1\\TipsAndTricks\\TatBlog.Data\\TatBlog.Data.csproj": {
+              "projectPath": "C:\\Users\\CICT\\Downloads\\Lab_1\\src\\Lab1\\TipsAndTricks\\TatBlog.Data\\TatBlog.Data.csproj"
+            },
+            "C:\\Users\\CICT\\Downloads\\Lab_1\\src\\Lab1\\TipsAndTricks\\TatBlog.Services\\TatBlog.Services.csproj": {
+              "projectPath": "C:\\Users\\CICT\\Downloads\\Lab_1\\src\\Lab1\\TipsAndTricks\\TatBlog.Services\\TatBlog.Services.csproj"
+            }
+          }
+        }
+      },
+      "warningProperties": {
+        "warnAsError": [
+          "NU1605"
+        ]
+      }
+    },
+    "frameworks": {
+      "net60": {
+        "dependencies": {
+          "Microsoft.EntityFrameworkCore.Tools": {
+            "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+            "suppressParent": "All",
+            "target": "Package",
+            "version": "[7.0.3, )"
+          }
+        },
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.402\\RuntimeIdentifierGraph.json"
+      }
+    },
+    "runtimes": {
+      "win7-x86": {
+        "#import": []
+      }
+    }
+  },
+  "logs": [
+    {
+      "code": "NU1202",
+      "level": "Error",
+      "message": "Package Microsoft.EntityFrameworkCore.Tools 7.0.3 is not compatible with net60 (.NETFramework,Version=v6.0). Package Microsoft.EntityFrameworkCore.Tools 7.0.3 supports: net6.0 (.NETCoreApp,Version=v6.0)",
+      "libraryId": "Microsoft.EntityFrameworkCore.Tools",
+      "targetGraphs": [
+        ".NETFramework,Version=v6.0"
+      ]
+    },
+    {
+      "code": "NU1202",
+      "level": "Error",
+      "message": "Package Microsoft.EntityFrameworkCore.SqlServer 7.0.3 is not compatible with net60 (.NETFramework,Version=v6.0). Package Microsoft.EntityFrameworkCore.SqlServer 7.0.3 supports: net6.0 (.NETCoreApp,Version=v6.0)",
+      "libraryId": "Microsoft.EntityFrameworkCore.SqlServer",
+      "targetGraphs": [
+        ".NETFramework,Version=v6.0"
+      ]
+    },
+    {
+      "code": "NU1202",
+      "level": "Error",
+      "message": "Package Microsoft.EntityFrameworkCore 7.0.3 is not compatible with net60 (.NETFramework,Version=v6.0). Package Microsoft.EntityFrameworkCore 7.0.3 supports: net6.0 (.NETCoreApp,Version=v6.0)",
+      "libraryId": "Microsoft.EntityFrameworkCore",
+      "targetGraphs": [
+        ".NETFramework,Version=v6.0"
+      ]
+    },
+    {
+      "code": "NU1202",
+      "level": "Error",
+      "message": "Package Microsoft.EntityFrameworkCore.Tools 7.0.3 is not compatible with net60 (.NETFramework,Version=v6.0) / win7-x86. Package Microsoft.EntityFrameworkCore.Tools 7.0.3 supports: net6.0 (.NETCoreApp,Version=v6.0)",
+      "libraryId": "Microsoft.EntityFrameworkCore.Tools",
+      "targetGraphs": [
+        ".NETFramework,Version=v6.0/win7-x86"
+      ]
+    },
+    {
+      "code": "NU1202",
+      "level": "Error",
+      "message": "Package Microsoft.EntityFrameworkCore 7.0.3 is not compatible with net60 (.NETFramework,Version=v6.0) / win7-x86. Package Microsoft.EntityFrameworkCore 7.0.3 supports: net6.0 (.NETCoreApp,Version=v6.0)",
+      "libraryId": "Microsoft.EntityFrameworkCore",
+      "targetGraphs": [
+        ".NETFramework,Version=v6.0/win7-x86"
+      ]
+    },
+    {
+      "code": "NU1202",
+      "level": "Error",
+      "message": "Package Microsoft.EntityFrameworkCore.SqlServer 7.0.3 is not compatible with net60 (.NETFramework,Version=v6.0) / win7-x86. Package Microsoft.EntityFrameworkCore.SqlServer 7.0.3 supports: net6.0 (.NETCoreApp,Version=v6.0)",
+      "libraryId": "Microsoft.EntityFrameworkCore.SqlServer",
+      "targetGraphs": [
+        ".NETFramework,Version=v6.0/win7-x86"
+      ]
+    }
+  ]
+}
